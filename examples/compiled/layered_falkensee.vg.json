@@ -200,10 +200,6 @@
                     "as": "end"
                 },
                 {
-                    "type": "filter",
-                    "expr": "datum[\"start\"] !== null && !isNaN(datum[\"start\"])"
-                },
-                {
                     "type": "formula",
                     "as": "year_start",
                     "expr": "datetime(year(datum[\"start\"]), 0, 1, 0, 0, 0, 0)"
@@ -212,6 +208,10 @@
                     "type": "formula",
                     "as": "year_end",
                     "expr": "datetime(year(datum[\"end\"]), 0, 1, 0, 0, 0, 0)"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"year_start\"] !== null && !isNaN(datum[\"year_start\"])"
                 }
             ]
         },
@@ -241,13 +241,13 @@
                     "as": "population"
                 },
                 {
-                    "type": "filter",
-                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
-                },
-                {
                     "type": "formula",
                     "as": "year_year",
                     "expr": "datetime(year(datum[\"year\"]), 0, 1, 0, 0, 0, 0)"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"year_year\"] !== null && !isNaN(datum[\"year_year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
                 }
             ]
         },
@@ -266,13 +266,13 @@
                     "as": "population"
                 },
                 {
-                    "type": "filter",
-                    "expr": "datum[\"year\"] !== null && !isNaN(datum[\"year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
-                },
-                {
                     "type": "formula",
                     "as": "year_year",
                     "expr": "datetime(year(datum[\"year\"]), 0, 1, 0, 0, 0, 0)"
+                },
+                {
+                    "type": "filter",
+                    "expr": "datum[\"year_year\"] !== null && !isNaN(datum[\"year_year\"]) && datum[\"population\"] !== null && !isNaN(datum[\"population\"])"
                 }
             ]
         }
