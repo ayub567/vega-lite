@@ -781,7 +781,7 @@ export interface VgLegendConfig extends VgLegendBase {
 
   // ---------- Title ----------
   /**
-   * Optional mark property definitions for custom legend styling.
+   * Mark property definitions for custom legend styling.
    */
    /**
     * Vertical text baseline for legend titles.

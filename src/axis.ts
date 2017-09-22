@@ -54,7 +54,7 @@ export interface Axis extends VgAxisBase, Guide {
   zindex?: number;
 
   /**
-   * Optional mark definitions for custom axis encoding.
+   * Mark definitions for custom axis encoding.
    *
    * @hide
    */

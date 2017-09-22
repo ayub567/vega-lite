@@ -692,7 +692,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "name": {
@@ -2179,7 +2179,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "facet": {
@@ -2235,7 +2235,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "hconcat": {
@@ -2283,7 +2283,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "height": {
@@ -2347,7 +2347,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "name": {
@@ -2418,7 +2418,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "encoding": {
@@ -2481,7 +2481,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "encoding": {
@@ -2544,7 +2544,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "name": {
@@ -3073,7 +3073,7 @@
           "type": "string"
         },
         "titleBaseline": {
-          "description": "Optional mark property definitions for custom legend styling. \n Vertical text baseline for legend titles.",
+          "description": "Mark property definitions for custom legend styling. \n Vertical text baseline for legend titles.",
           "type": "string"
         },
         "titleColor": {
@@ -3358,17 +3358,17 @@
       "properties": {
         "data": {
           "$ref": "#/definitions/Data",
-          "description": "secondary data source to lookup in"
+          "description": "Secondary data source to lookup in."
         },
         "fields": {
-          "description": "(Optional) fields in foreign data to lookup\nif not specificied, the entire object is queried",
+          "description": "Fields in foreign data to lookup.\nIf not specificied, the entire object is queried.",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "key": {
-          "description": "key in data to lookup",
+          "description": "Key in data to lookup.",
           "type": "string"
         }
       },
@@ -3393,18 +3393,18 @@
               "type": "array"
             }
           ],
-          "description": "(Optional) The field or fields for storing the computed formula value.\nIf `from.fields` is not specified, `as` has to be a string and we put the whole object into the data"
+          "description": "The field or fields for storing the computed formula value.\nIf `from.fields` is specified, the transform will use the same names for `as`.\nIf `from.fields` is not specified, `as` has to be a string and we put the whole object into the data under the specified name."
         },
         "default": {
-          "description": "(Optional) The default value to use if lookup fails",
+          "description": "The default value to use if lookup fails (default `null`).",
           "type": "string"
         },
         "from": {
           "$ref": "#/definitions/LookupData",
-          "description": "secondary data reference"
+          "description": "Secondary data reference."
         },
         "lookup": {
-          "description": "key in primary data source",
+          "description": "Key in primary data source.",
           "type": "string"
         }
       },
@@ -5386,7 +5386,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "encoding": {
@@ -5477,7 +5477,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "facet": {
@@ -5561,7 +5561,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "hconcat": {
@@ -5637,7 +5637,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "height": {
@@ -5729,7 +5729,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "name": {
@@ -5806,7 +5806,7 @@
           "description": "An object describing the data source"
         },
         "description": {
-          "description": "An optional description of this mark for commenting purpose.",
+          "description": "Description of this mark for commenting purpose.",
           "type": "string"
         },
         "name": {
@@ -6554,7 +6554,7 @@
           "type": "string"
         },
         "titleBaseline": {
-          "description": "Optional mark property definitions for custom legend styling. \n Vertical text baseline for legend titles.",
+          "description": "Mark property definitions for custom legend styling. \n Vertical text baseline for legend titles.",
           "type": "string"
         },
         "titleColor": {
