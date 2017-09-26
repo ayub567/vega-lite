@@ -659,6 +659,14 @@
     "BaseSelectionDef": {
       "additionalProperties": false,
       "properties": {
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
+        },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
           "items": {
@@ -2714,6 +2722,14 @@
           ],
           "type": "string"
         },
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
+        },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
           "items": {
@@ -2773,6 +2789,14 @@
           "description": "Establishes a two-way binding between the interval selection and the scales\nused within the same view. This allows a user to interactively pan and\nzoom the view.",
           "enum": [
             "scales"
+          ],
+          "type": "string"
+        },
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
           ],
           "type": "string"
         },
@@ -3680,6 +3704,14 @@
     "MultiSelection": {
       "additionalProperties": false,
       "properties": {
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
+        },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
           "items": {
@@ -3728,6 +3760,14 @@
     "MultiSelectionConfig": {
       "additionalProperties": false,
       "properties": {
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
+        },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
           "items": {
@@ -4706,6 +4746,14 @@
           ],
           "description": "Establish a two-way binding between a single selection and input elements\n(also known as dynamic query widgets). A binding takes the form of\nVega's [input element binding definition](https://vega.github.io/vega/docs/signals/#bind)\nor can be a mapping between projected field/encodings and binding definitions.\n\nSee the [bind transform](bind.html) documentation for more information."
         },
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
+        },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
           "items": {
@@ -4760,6 +4808,14 @@
             }
           ],
           "description": "Establish a two-way binding between a single selection and input elements\n(also known as dynamic query widgets). A binding takes the form of\nVega's [input element binding definition](https://vega.github.io/vega/docs/signals/#bind)\nor can be a mapping between projected field/encodings and binding definitions.\n\nSee the [bind transform](bind.html) documentation for more information."
+        },
+        "empty": {
+          "description": "By default, all data values are considered to lie within an empty selection.\nWhen set to `none`, empty selections contain no data values.",
+          "enum": [
+            "all",
+            "none"
+          ],
+          "type": "string"
         },
         "encodings": {
           "description": "An array of encoding channels. The corresponding data field values\nmust match for a data tuple to fall within the selection.",
