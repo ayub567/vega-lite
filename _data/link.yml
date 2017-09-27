@@ -44,6 +44,8 @@ Summarize:
   link: "transform.html#summarize-field"
 TimeUnit:
   link: timeunit.html
+LookupData:
+  link: "lookup.html#lookup-data"
 
 # Transform - Time Unit
 Month:
